@@ -1,47 +1,10 @@
-/* .App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 * {
 
   box-sizing: border-box;
   background: no-repeat center center fixed;
-  background-image: url("/Users/ronald/Development/project/game_time_app/game-time-app-frontend/src/Images/lights-night-stadium-mixed-media.jpg");
+  background-image: url("./Images/lights-night-stadium-mixed-media.jpg"); 
   background-size: cover;
   margin-top: 150px;
   margin-bottom: 0px;
@@ -83,3 +46,102 @@
   homeBtn:active{
     box-shadow:inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
   }
+.teamButton{
+  
+  background-size: 50%;
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat; 
+    margin-left: 48px; 
+}
+#phillies{
+  background-image: url("https://logos-world.net/wp-content/uploads/2020/05/Philadelphia-Phillies-Emblem.png");
+}
+#dodgers{
+  background-image: url();
+}
+#braves{
+  background-image: url();
+}
+#mets{
+  background-image: url();
+}
+#washington{
+  background-image: url();
+}
+#marlins{
+  background-image: url();
+}
+#cincinati{
+  background-image: url();
+}
+#arizona{
+  background-image: url();
+}
+#giants{
+  background-image: url();
+}
+#pirates{
+  background-image: url();
+}
+#cubs{
+  background-image: url();
+}
+#milwakee{
+  background-image: url();
+}
+#padres{
+  background-image: url();
+}
+#colorado{
+  background-image: url();
+}
+#cardinals{
+  background-image: url();
+}
+
+#whiteSox{
+  background-image: url();
+}
+#cleveland{
+  background-image: url();
+}
+#detroit{
+  background-image: url();
+}
+#royals{
+  background-image: url();
+}
+#rays{
+  background-image: url();
+}
+#twins{
+  background-image: url();
+}
+#orioles{
+  background-image: url();
+}
+#redSox{
+  background-image: url();
+}
+#yankees{
+  background-image: url();
+}
+#rangers{
+  background-image: url();
+}
+#toronto{
+  background-image: url();
+}
+#houston{
+  background-image: url();
+}
+#angels{
+  background-image: url();
+}
+#oakland{
+  background-image: url();
+}
+#seattle{
+  background-image: url();
+}

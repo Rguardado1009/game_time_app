@@ -1,6 +1,5 @@
 
 import styled, { css } from "styled-components";
-
 export const CardWrapper = styled.div`
   overflow: hidden;
   padding: 0 0 32px;

@@ -1,0 +1,100 @@
+.buttonContainer1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#phillies{
+    max-width: 200px;
+    max-height: 200px;
+}
+    #dodgers{
+    background-image: url();
+  }
+  #braves{
+    background-image: url();
+  }
+  #mets{
+    background-image: url();
+  }
+  #washington{
+    background-image: url();
+  }
+  #marlins{
+    background-image: url();
+  }
+  #cincinati{
+    background-image: url();
+  }
+  #arizona{
+    background-image: url();
+  }
+  #giants{
+    background-image: url();
+  }
+  #pirates{
+    background-image: url();
+  }
+  #cubs{
+    background-image: url();
+  }
+  #milwakee{
+    background-image: url();
+  }
+  #padres{
+    background-image: url();
+  }
+  #colorado{
+    background-image: url();
+  }
+  #cardinals{
+    background-image: url();
+  }
+  
+  #whiteSox{
+    background-image: url();
+  }
+  #cleveland{
+    background-image: url();
+  }
+  #detroit{
+    background-image: url();
+  }
+  #royals{
+    background-image: url();
+  }
+  #rays{
+    background-image: url();
+  }
+  #twins{
+    background-image: url();
+  }
+  #orioles{
+    background-image: url();
+  }
+  #redSox{
+    background-image: url();
+  }
+  #yankees{
+    background-image: url();
+  }
+  #rangers{
+    background-image: url();
+  }
+  #toronto{
+    background-image: url();
+  }
+  #houston{
+    background-image: url();
+  }
+  #angels{
+    background-image: url();
+  }
+  #oakland{
+    background-image: url();
+  }
+  #seattle{
+    background-image: url();
+  }
+  
+  

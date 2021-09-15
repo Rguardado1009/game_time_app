@@ -1,20 +1,21 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import './App.css';
-import Home from './Home';
+import Home from "./components/Home";
 import National from  "./components/National";
-import Leagues from './Leagues'
-import Teams from "./Teams";
-import Signup from './Signup';
+import American from "./components/American"
+import Leagues from "./components/Leagues";
+import Teams from "./components/Teams";
+import Signup from "./components/Signup";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-
-        <National/>
+      <header className="App-header">    
         <Switch>
-        <Route path="/leagues/teams">
+        <Route path="/leagues/american">
+        <American/>
+        </Route>
+        <Route path="/leagues/national">
         <Teams/>
         </Route>
         <Route path="/leagues">

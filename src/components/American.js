@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function americanLeague(){
+function American(){
 
     return(
         <div className="teamsContainer">
@@ -30,4 +30,4 @@ function americanLeague(){
         </div>
     )}
     
-    export default americanLeague
+    export default American

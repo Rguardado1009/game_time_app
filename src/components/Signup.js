@@ -13,8 +13,8 @@ import {
   CardOptionsNote,
   CardButton,
   CardLink
-} from "./Signup css";
-import './App.css';
+} from "../Signup css";
+
 
 export default function Signup() {
     return (

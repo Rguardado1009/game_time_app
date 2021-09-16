@@ -11,8 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-html {
+.footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
+  font-family: roboto;
+  color: #fff
+}
+*{
 
   box-sizing: border-box;
   background: no-repeat center center fixed;

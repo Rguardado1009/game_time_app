@@ -5,28 +5,27 @@ function American(){
 
     return(
         <div className="teamsContainer">
-            <h1 className="teamsTitle">Choose a team</h1>
-            <div clasName = "buttonContainer1">
-            <button className="teamButton" id="whiteSox"></button>
-            <button className="teamButton" id="cleveland"></button>
-            <button className="teamButton" id="detroit"></button>
-            <button className="teamButton" id="royals"></button>
-            <button className="teamButton" id="rays"></button>
-            </div>
-            <div clasName = "buttonContainer2">
-            <button className="teamButton" id="twins"></button>
-            <button className="teamButton" id="orioles"></button>
-            <button className="teamButton" id="redSox"></button>
-            <button className="teamButton" id="yankees"></button>
-            <button className="teamButton" id="rangers"></button>
-            </div>
-            <div clasName = "buttonContainer3">
-            <button className="teamButton" id="toronto"></button>
-            <button className="teamButton" id="houston"></button>
-            <button className="teamButton" id="angels"></button>
-            <button className="teamButton" id="oakland"></button>
-            <button className="teamButton" id="seattle"></button>
-            </div>
+        <h1 className="teamsTitle">Choose a team</h1>
+        <input type="text"
+        placeholder="Search for your Team"
+        />
+        <div className="buttonContainer1">
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Dallas-Mavericks-Symbol.png" className="teamButton" id="celtics"/>
+            <img src="https://w7.pngwing.com/pngs/428/182/png-transparent-barclays-center-brooklyn-nets-denver-nuggets-nba-orlando-magic-nba-text-trademark-sport.png" className="teamButton" id="phillies"/>
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Philadelphia-Phillies-Emblem.png" className="teamButton" id="phillies"/>
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Philadelphia-Phillies-Emblem.png" className="teamButton" id="phillies"/>
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Philadelphia-Phillies-Emblem.png" className="teamButton" id="phillies"/>
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Philadelphia-Phillies-Emblem.png" className="teamButton" id="phillies"/>
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Philadelphia-Phillies-Emblem.png" className="teamButton" id="phillies"/>
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Philadelphia-Phillies-Emblem.png" className="teamButton" id="phillies"/>
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Philadelphia-Phillies-Emblem.png" className="teamButton" id="phillies"/>
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Philadelphia-Phillies-Emblem.png" className="teamButton" id="phillies"/>
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Philadelphia-Phillies-Emblem.png" className="teamButton" id="phillies"/>
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Philadelphia-Phillies-Emblem.png" className="teamButton" id="phillies"/>
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Philadelphia-Phillies-Emblem.png" className="teamButton" id="phillies"/>
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Philadelphia-Phillies-Emblem.png" className="teamButton" id="phillies"/>
+            <img src="https://logos-world.net/wp-content/uploads/2020/05/Philadelphia-Phillies-Emblem.png" className="teamButton" id="phillies"/>
+        </div>
         </div>
     )}
     

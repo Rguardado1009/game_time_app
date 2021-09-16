@@ -16,7 +16,7 @@ function App() {
         <American/>
         </Route>
         <Route path="/leagues/national">
-        <Teams/>
+        <National/>
         </Route>
         <Route path="/leagues">
         <Leagues/>

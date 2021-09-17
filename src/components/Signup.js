@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {
   CardWrapper,
   CardHeader,
@@ -9,56 +9,82 @@ import {
   CardInput,
   CardOptionsItem,
   CardOptions,
-  CardOptionsNote,
   CardButton,
   CardLink
 } from "../Signup css";
 
 
 export default function Signup() {
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const handleSubmit = (e) => {
+      setUsername("");
+      setEmail("");
+      setPassword("");
+      const account = { username, email, password };
+      fetch("localhost:9292/signup", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(account),
+      });
+  };
     return (
         <div >
         <CardWrapper className="teams">
           <CardHeader>
-            <CardHeading>Welcome</CardHeading>
+            <CardHeading>Welcome Please Signup</CardHeading>
           </CardHeader>
   
           <CardBody>
             <CardFieldset>
-              <CardInput placeholder="Username" type="text" required />
+              <CardInput 
+                    type="text"
+                    placeholder="username"
+                    required
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}/>
             </CardFieldset>
   
             <CardFieldset>
-              <CardInput placeholder="E-mail" type="text" required />
+              <CardInput 
+                    type="email"
+                    placeholder="Email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}/>
             </CardFieldset>
   
             <CardFieldset>
-              <CardInput placeholder="Password" type="password" required />
-              <CardIcon className="fa fa-eye" eye small />
-            </CardFieldset>
-  
+              <CardInput 
+               type="password"
+               placeholder="Password"
+               required
+               value={password}
+               onChange={(e) => setPassword(e.target.value)} />
+              <CardIcon />
+            </CardFieldset>  
             <CardFieldset>
-              <CardOptionsNote>Or sign up below</CardOptionsNote>
+             
   
               <CardOptions>
                 <CardOptionsItem>
-                  <CardIcon className="fab fa-google" big />
+                  <CardIcon  />
                 </CardOptionsItem>
   
                 <CardOptionsItem>
-                  <CardIcon className="fab fa-twitter" big />
+                  <CardIcon />
                 </CardOptionsItem>
   
                 <CardOptionsItem>
-                  <CardIcon className="fab fa-facebook" big />
+                  <CardIcon />
                 </CardOptionsItem>
               </CardOptions>
             </CardFieldset>
   
             <CardFieldset>
-              <CardButton type="button">Sign Up</CardButton>
+              <CardButton type="submit" onClick={handleSubmit}>Sign Up</CardButton>
             </CardFieldset>
-  
             <CardFieldset>
               <CardLink>I already have an account</CardLink>
             </CardFieldset>
@@ -67,3 +93,33 @@ export default function Signup() {
       </div>
     )
 }
+{/* <BoxContainer>
+            <FormContainer>
+                <Input
+                    
+                />
+                <Input
+                    
+                />
+                <Input
+                    type="password"
+                    placeholder="Password"
+                    required
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+                <Input
+                    type="password"
+                    placeholder="Confirm Password"
+                    required
+                    value={confPassword}
+                    onChange={(e) => setConfPassword(e.target.value)}
+                />
+            </FormContainer>
+            <SubmitButton type="submit" onClick={handleSubmit}>
+                <Link to="/quiz"> Start</Link>
+            </SubmitButton>
+
+            <MutedLink href="Home.js">
+                Already have an account?
+                <BoldLink>Signin</BoldLink> */}

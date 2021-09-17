@@ -2,15 +2,18 @@
 import "../Teams.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Table from 'react-bootstrap/Table';
+import {useParams} from "react-router-dom"
 
-
-function Teams({team}){
+const Teams = ({team}) => {
+const { id } = useParams;
 
   return( 
    
   <div className="infoContainer">
     <Table striped bordered hover variant="dark">
+      
   <thead>
+  <h1>{team.team_name}  {team.league}  { id } </h1>
     <tr>
       <th scope="col">#</th>
       <th scope="col">Player</th>
@@ -35,7 +38,7 @@ function Teams({team}){
 {(team.players.map((player)=> 
 (
 <tr>
-<td>{player.number}</td>
+<td>{player.number} - {id}</td> 
 <td>{player.name}</td>
 <td>{player.position}</td>
 <td>{player.games}</td>

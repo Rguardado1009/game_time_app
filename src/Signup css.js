@@ -2,7 +2,7 @@
 import styled, { css } from "styled-components";
 export const CardWrapper = styled.div`
   overflow: hidden;
-  padding: 0 0 32px;
+  padding: 0 0 50px;
   margin: 48px auto 0;
   width: 300px;
   font-family: Quicksand, Roboto, sans-serif;
@@ -11,8 +11,8 @@ export const CardWrapper = styled.div`
 `;
 
 export const CardHeader = styled.header`
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   color: white;
 `;
 
@@ -21,6 +21,7 @@ export const CardHeading = styled.h1`
   font-weight: bold;
   text-align: center;
   color: white;
+  padding-bottom: 0;
 `;
 
 export const CardBody = styled.div`

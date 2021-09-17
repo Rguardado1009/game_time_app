@@ -15,13 +15,15 @@ const mystyle = {
     display: 'flex',
     alignItems: 'stretch'
     }
-const imgStyle = {
+const imgStyle = { 
     height: '170px',
     width: '200px',
     textAlign: 'center',
     display: 'flex',
     alignItems: 'baseline'
     }
+
+   
 export default function Eastern({team}) {
     
     return (
@@ -31,7 +33,7 @@ export default function Eastern({team}) {
             <Card style={mystyle}>
             <Card.Img style={imgStyle} variant="top" src="https://i.ibb.co/syhktZR/Knicks.png" />
             <Card.Title>{team.team_name}</Card.Title>
-            <Link to="/conference/eastern/teams">
+            <Link to={`/conference/eastern/${team.id}`}>
             <Button variant="primary">View More</Button>
             </Link>
             </Card>

@@ -9,15 +9,11 @@ function Teams({team}){
   return( 
    
   <div className="infoContainer">
-   
-    <h1> </h1>
     <Table striped bordered hover variant="dark">
   <thead>
-  {/* {team.players.map((player) => (player.name))} */}
     <tr>
-      <th>#</th>
-      <th scope="col">player</th>
-      <th scope="col">Number</th>
+      <th scope="col">#</th>
+      <th scope="col">Player</th>
       <th scope="col">Position</th>
       <th scope="col">Games</th>
       <th scope="col">Points</th>
@@ -36,12 +32,28 @@ function Teams({team}){
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td></td>
-      <td>{}</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
+{(team.players.map((player)=> 
+(
+<tr>
+<td>{player.number}</td>
+<td>{player.name}</td>
+<td>{player.position}</td>
+<td>{player.games}</td>
+<td>{player.points}</td>
+<td>{player.field_goals}</td>
+<td>{player.fg_percentage}</td>
+<td>{player.three_points}</td>
+<td>{player.freethrows}</td>
+<td>{player.offensive_rebounds}</td>
+<td>{player.defensive_rebounds}</td>
+<td>{player.rebounds}</td>
+<td>{player.assist}</td>
+<td>{player.blocks}</td>
+<td>{player.steals}</td>
+<td>{player.turnovers}</td>
+<td>{player.fouls}</td>
+</tr>
+)))}
   </tbody>
 </Table>
 {/*  

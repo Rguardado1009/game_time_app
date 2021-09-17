@@ -5,7 +5,7 @@ export const CardWrapper = styled.div`
   padding: 0 0 32px;
   margin: 48px auto 0;
   width: 300px;
-  font-family: Quicksand, arial, sans-serif;
+  font-family: Quicksand, Roboto, sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
 `;
@@ -13,17 +13,20 @@ export const CardWrapper = styled.div`
 export const CardHeader = styled.header`
   padding-top: 32px;
   padding-bottom: 32px;
+  color: white;
 `;
 
 export const CardHeading = styled.h1`
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+  color: white;
 `;
 
 export const CardBody = styled.div`
   padding-right: 32px;
   padding-left: 32px;
+  color: white;
 `;
 
 export const CardFieldset = styled.fieldset`
@@ -31,6 +34,7 @@ export const CardFieldset = styled.fieldset`
   padding: 0;
   margin: 0;
   border: 0;
+  color: white;
 
   & + & {
     margin-top: 24px;
@@ -55,6 +59,7 @@ export const CardInput = styled.input`
   border-bottom: 1px solid #ddd;
   border-left: 0;
   transition: border-bottom-color 0.25s ease-in;
+  color: white;
 
   &:focus {
     border-bottom-color: #e5195f;
@@ -63,10 +68,11 @@ export const CardInput = styled.input`
 `;
 
 export const CardIcon = styled.span`
-  color: #666;
+  color: white;
   cursor: pointer;
   opacity: .25;
   transition: opacity .25s ease-in;
+  color: white;
 
   &:hover {
     opacity: .95;
@@ -100,6 +106,7 @@ export const CardOptionsNote = styled.small`
   font-size: 12px;
   text-align: center;
   text-transform: uppercase;
+  color: white;
 `;
 
 export const CardOptions = styled.ul`
@@ -112,6 +119,7 @@ export const CardOptions = styled.ul`
   justify-content: center;
   width: 100%;
   list-style-type: none;
+  color: white;
 `;
 
 export const CardOptionsItem = styled.li`
@@ -127,7 +135,7 @@ export const CardButton = styled.button`
   font-family: inherit;
   font-size: 14px;
   font-weight: 700;
-  color: #fff;
+  color: white;
   background-color: #e5195f;
   border: 0;
   border-radius: 35px;
@@ -145,7 +153,7 @@ export const CardLink = styled.a`
   display: inline-block;
   font-size: 12px;
   text-decoration: none;
-  color: #aaa;
+  color: white;
   border-bottom: 1px solid #ddd;
   cursor: pointer;
   transition: color 0.25s ease-in;

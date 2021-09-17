@@ -22,16 +22,18 @@ useEffect(()=>{
       <header className="App-header">    
         <Switch>
         <Route path="/conference/western">
-        <Western/>
+        <div>
+        {teams.map((team)=> (<Western team={team}/>))}
+        </div>
         </Route>
         <Route path="/conference/eastern/teams">
         <div>
-        {teams.map((team)=> <Teams team={team}/>)}
+        {teams.map((team)=>(<Teams team={team}/>))}
         </div>
         </Route>
         <Route path="/conference/eastern">
           <div>
-        {teams.map((team)=> (<Eastern teams={teams}/>))}
+        {teams.map((team)=> (<Eastern team={team}/>))}
         </div>
         </Route>
         <Route path="/conference">

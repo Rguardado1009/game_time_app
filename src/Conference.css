@@ -1,10 +1,6 @@
 .teamsContainer{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     max-width: 100%
-}
-.atlantic{
-    display: flex;
-    flex-wrap: wrap;
 }
